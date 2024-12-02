@@ -35,14 +35,14 @@ struct ContentView: View {
     
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 60))]) {
-            let reatedEmojis = Array(repeating: emojis, count: 2).flatMap {$0}.shuffled()
-            ForEach(0..<reatedEmojis.count, id: \.self) { index in
-                CardView(content: reatedEmojis[index])
+            var repeatedEmojis = Array(repeating: emojis, count: 2).flatMap {$0}.shuffled()
+            ForEach(0..<repeatedEmojis.count, id: \.self) { index in
+                CardView(content: repeatedEmojis[index])
                     .aspectRatio(2/3, contentMode: .fit)
             }
         }.foregroundColor(.orange)
     }
-    
+    // add or delate cards
     var cardCountAdjusters: some View {
         HStack {
             cardCountAdjuster(by: -1, symbol: "minus.rectangle.fill")
@@ -61,7 +61,7 @@ struct ContentView: View {
         })
         .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
     }
-    
+    // change the theme
     var themeButton: some View {
         HStack(alignment: .bottom, spacing: 45) {
             changeTheme(theme: vehicles, themeName: "Vehicles", symbol: "car.rear")
