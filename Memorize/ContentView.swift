@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.colorScheme) var buttonColor
     
-    
     @State var emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚒"]
     
     let fruits = ["🥝", "🍈", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓"]
