@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0D2C742A2CF7823500B76157 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2C742A2CF7823500B76157 /* Memory03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		0D2C742B2CF7823500B76157 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D2C742A2CF7823500B76157 /* Memorize.app */,
+				0D2C742A2CF7823500B76157 /* Memory03.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D2C74292CF7823500B76157 /* Memorize */ = {
+		0D2C74292CF7823500B76157 /* Memory03 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D2C74382CF7823600B76157 /* Build configuration list for PBXNativeTarget "Memorize" */;
+			buildConfigurationList = 0D2C74382CF7823600B76157 /* Build configuration list for PBXNativeTarget "Memory03" */;
 			buildPhases = (
 				0D2C74262CF7823500B76157 /* Sources */,
 				0D2C74272CF7823500B76157 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				0D2C742C2CF7823500B76157 /* Memorize */,
 			);
-			name = Memorize;
+			name = Memory03;
 			packageProductDependencies = (
 			);
 			productName = Memorize;
-			productReference = 0D2C742A2CF7823500B76157 /* Memorize.app */;
+			productReference = 0D2C742A2CF7823500B76157 /* Memory03.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D2C74252CF7823500B76157 /* Build configuration list for PBXProject "Memorize" */;
+			buildConfigurationList = 0D2C74252CF7823500B76157 /* Build configuration list for PBXProject "Memory03" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D2C74292CF7823500B76157 /* Memorize */,
+				0D2C74292CF7823500B76157 /* Memory03 */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D2C74252CF7823500B76157 /* Build configuration list for PBXProject "Memorize" */ = {
+		0D2C74252CF7823500B76157 /* Build configuration list for PBXProject "Memory03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2C74362CF7823600B76157 /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D2C74382CF7823600B76157 /* Build configuration list for PBXNativeTarget "Memorize" */ = {
+		0D2C74382CF7823600B76157 /* Build configuration list for PBXNativeTarget "Memory03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2C74392CF7823600B76157 /* Debug */,
