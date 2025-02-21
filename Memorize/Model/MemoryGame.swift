@@ -9,7 +9,6 @@ import Foundation
 
 struct MemoryGame<CardContent> where CardContent: Equatable{
     private(set) var cards: Array<Card>
-    private(set) var scores : Int = 0
     
     init(numberOfPairsOfCards: Int, cardContentFactory: (Int) -> CardContent) {
         cards = Array<Card>()
@@ -36,17 +35,14 @@ struct MemoryGame<CardContent> where CardContent: Equatable{
                     if cards[chosenIndex].content == cards[potentialMatchIndex].content {
                         cards[chosenIndex].isMatched = true
                         cards[potentialMatchIndex].isMatched = true
-                        scores += 2
-                    } else if cards[chosenIndex].hasSeen == true {scores -= 1}
+                    }
                    // 有两张未匹配但是看过-1
                 } else {
                     indexOfTheOneAndOnlyFaceUpCard = chosenIndex
                     //如果没有唯一翻开的卡片，设置当前卡片为唯一翻开的卡片
-                    if cards[chosenIndex].hasSeen == true {scores -= 1}
                     // 只有一张但是已经看过-1
                 }
                 cards[chosenIndex].isFaceUp = true
-                cards[chosenIndex].hasSeen = true
             }
         }
     }
