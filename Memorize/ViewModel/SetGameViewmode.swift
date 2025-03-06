@@ -8,7 +8,7 @@
 import Foundation
 
 class SetGameViewmodel: ObservableObject {
-    private var viewModel = createSetGame()
+    @Published private var viewModel = createSetGame()
     private var initialCardNumber = 12
     private(set) var presentCardNumber: Int
     
@@ -28,5 +28,12 @@ class SetGameViewmodel: ObservableObject {
         } else {
             return viewModel.cards
         }
+    }
+    func choose(_ card: Card) {
+        viewModel.choose(card)
+    }
+    
+    var chosenCards: [Card] {
+        return viewModel.chosenCards
     }
 }

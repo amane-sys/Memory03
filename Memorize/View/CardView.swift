@@ -18,7 +18,7 @@ struct CardView: View {
         shapeStack
             .foregroundColor(color)
             .cardify(
-                isFaceUp: card.isFaceUp,
+                isFaceUp: true,
                 isSelected: card.isChosen,
                 isMatched: card.isMatched
                 )
